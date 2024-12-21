@@ -94,13 +94,13 @@
                     video.play();
                 });
                 hls.on(Hls.Events.ERROR, function () {
-                    showError();
+                    // showError();
                 });
             } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                 // For Safari and native HLS support
                 video.src = url;
                 video.addEventListener('error', function () {
-                    showError();
+                    // showError();
                 });
                 video.addEventListener('loadedmetadata', function () {
                     video.play();
